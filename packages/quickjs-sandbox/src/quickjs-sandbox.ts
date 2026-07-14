@@ -1,14 +1,14 @@
 import type { SandboxBackend, SandboxRunResult } from "./vendor/runtime-types.js";
 import type { VfsBus } from "./vendor/vfs-bus.js";
-import type { SandboxPolicy } from "@browser-containers/sandbox-policy";
+import type { SandboxPolicy } from "@bolojs/sandbox-policy";
 import { SandboxPool } from "./sandbox-pool.js";
 
 /**
  * QuickJS-based sandbox backend providing memory/CPU caps and per-path VFS ACLs.
- * Install `@browser-containers/quickjs-sandbox` and pass an instance to `boot()`:
+ * Install `@bolojs/quickjs-sandbox` and pass an instance to `boot()`:
  *
- *   import { boot } from '@browser-containers/runtime';
- *   import { QuickJSSandbox } from '@browser-containers/quickjs-sandbox';
+ *   import { boot } from '@bolojs/runtime';
+ *   import { QuickJSSandbox } from '@bolojs/quickjs-sandbox';
  *
  *   const container = await boot({
  *     sandbox: new QuickJSSandbox(vfs, { memory: { limitMb: 128 } }),

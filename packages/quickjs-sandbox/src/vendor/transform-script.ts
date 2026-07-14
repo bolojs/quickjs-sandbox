@@ -1,7 +1,7 @@
-// Vendored from @browser-containers/wasm-registry (packages/wasm-registry/src/bundle.ts
-// in the browser-containers monorepo, not published to npm) — only the single-file
+// Vendored from @bolojs/wasm-registry (packages/wasm-registry/src/bundle.ts
+// in the bolo monorepo, not published to npm) — only the single-file
 // TS-to-JS transform, none of that package's bundling/module-resolution machinery.
-// TODO: replace with a real `@browser-containers/wasm-registry` npm dependency once
+// TODO: replace with a real `@bolojs/wasm-registry` npm dependency once
 // that package is published, and delete this file.
 
 declare global {

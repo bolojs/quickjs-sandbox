@@ -1,18 +1,18 @@
 # quickjs-sandbox
 
 QuickJS-based sandboxed code execution, extracted from
-[browser-containers](https://github.com/browser-containers/browser-containers).
+[bolo](https://github.com/bolojs/bolo).
 
 - `packages/quickjs-sandbox` — memory/CPU-capped sandbox backend with per-path VFS ACLs.
 - `packages/sandbox-policy` — the policy library (`SandboxPresets`, `mergePolicy`,
-  `createSwGate`, `createVfsAcl`) that `quickjs-sandbox` and browser-containers' own
+  `createSwGate`, `createVfsAcl`) that `quickjs-sandbox` and bolo's own
   agent sandboxing both build on.
 
 ## Vendored dependencies
 
-`quickjs-sandbox` originally depended on three other browser-containers monorepo
-packages that aren't published to npm: `@browser-containers/runtime` (types only),
-`@browser-containers/vfs-bus`, and `@browser-containers/wasm-registry`. Rather than
+`quickjs-sandbox` originally depended on three other bolo monorepo
+packages that aren't published to npm: `@bolojs/runtime` (types only),
+`@bolojs/vfs-bus`, and `@bolojs/wasm-registry`. Rather than
 block the extraction on publishing those, the small pieces actually used are vendored
 under `packages/quickjs-sandbox/src/vendor/`:
 
@@ -24,7 +24,7 @@ under `packages/quickjs-sandbox/src/vendor/`:
   surface and `writeFile()` helper this package touches; the real `VfsBus` also handles
   OPFS persistence, eviction, and watchers, none of which this package needs.
 
-**TODO**: once `@browser-containers/vfs-bus` and `@browser-containers/wasm-registry`
+**TODO**: once `@bolojs/vfs-bus` and `@bolojs/wasm-registry`
 are published to npm, replace the vendored files with real dependencies and delete
 `src/vendor/`.
 

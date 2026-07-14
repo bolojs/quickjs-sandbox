@@ -1,5 +1,5 @@
 {
-  "name": "@browser-containers/quickjs-sandbox",
+  "name": "@bolojs/quickjs-sandbox",
   "version": "0.2.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -18,7 +18,7 @@
     "oxc-transform": "^0.139.0"
   },
   "peerDependencies": {
-    "@browser-containers/sandbox-policy": "workspace:*"
+    "@bolojs/sandbox-policy": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

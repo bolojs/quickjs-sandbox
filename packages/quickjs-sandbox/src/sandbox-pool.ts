@@ -11,7 +11,7 @@ import {
   SandboxPresets,
   createVfsAcl,
   type SandboxPolicy,
-} from "@browser-containers/sandbox-policy";
+} from "@bolojs/sandbox-policy";
 
 // The QuickJS sandbox always runs untrusted agent code, so — unlike
 // `createSwGate`/`createVfsAcl`'s own `null` = "unrestricted" convention,
@@ -169,7 +169,7 @@ export class SandboxPool {
 
   /**
    * Erases TypeScript syntax via the shared esbuild WASM instance (routed
-   * through `@browser-containers/wasm-registry`'s real TS parser) instead of
+   * through `@bolojs/wasm-registry`'s real TS parser) instead of
    * the previous hand-rolled regex stripper, which used non-greedy
    * `[\s\S]*?\}` matches that broke on nested object types/interfaces.
    */
