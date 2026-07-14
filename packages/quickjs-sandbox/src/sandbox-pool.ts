@@ -1,12 +1,12 @@
-import type { SandboxRunResult } from "@browser-containers/runtime";
+import type { SandboxRunResult } from "./vendor/runtime-types.js";
 import {
   newQuickJSWASMModuleFromVariant,
   type QuickJSContext,
   type QuickJSHandle,
 } from "quickjs-emscripten-core";
 import releaseSyncVariant from "@jitl/quickjs-wasmfile-release-sync";
-import type { VfsBus } from "@browser-containers/vfs-bus";
-import { transformScript } from "@browser-containers/wasm-registry";
+import type { VfsBus } from "./vendor/vfs-bus.js";
+import { transformScript } from "./vendor/transform-script.js";
 import {
   SandboxPresets,
   createVfsAcl,

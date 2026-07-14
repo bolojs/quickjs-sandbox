@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { SandboxPool } from "./sandbox-pool";
-import { VfsBus } from "@browser-containers/vfs-bus";
+import { VfsBus } from "./vendor/vfs-bus.js";
 
 describe("SandboxPool", () => {
   it("runs plain JavaScript", async () => {

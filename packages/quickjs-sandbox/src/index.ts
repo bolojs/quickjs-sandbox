@@ -9,4 +9,4 @@ export {
 } from "@browser-containers/sandbox-policy";
 export type { SandboxPolicy } from "@browser-containers/sandbox-policy";
 export { QuickJSSandbox } from "./quickjs-sandbox.js";
-export type { SandboxBackend, SandboxRunResult } from "@browser-containers/runtime";
+export type { SandboxBackend, SandboxRunResult } from "./vendor/runtime-types.js";

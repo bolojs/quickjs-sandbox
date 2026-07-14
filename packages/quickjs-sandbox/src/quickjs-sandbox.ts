@@ -1,5 +1,5 @@
-import type { SandboxBackend, SandboxRunResult } from "@browser-containers/runtime";
-import type { VfsBus } from "@browser-containers/vfs-bus";
+import type { SandboxBackend, SandboxRunResult } from "./vendor/runtime-types.js";
+import type { VfsBus } from "./vendor/vfs-bus.js";
 import type { SandboxPolicy } from "@browser-containers/sandbox-policy";
 import { SandboxPool } from "./sandbox-pool.js";
 
